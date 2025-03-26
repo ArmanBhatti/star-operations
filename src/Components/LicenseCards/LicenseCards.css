@@ -1,0 +1,244 @@
+/* Main container with navy blue background and professional styling */
+.license-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffffff; /* Navy blue background */
+  color: #F5F5F5; /* Soft white text */
+}
+
+/* Intro section with spacing and styling */
+.intro-section {
+  margin-bottom: 40px;
+}
+
+.intro-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #49BEB7; /* Light teal for headings */
+  text-transform: uppercase; /* Professional feel */
+  letter-spacing: 2px;
+}
+
+.intro-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b4b4b; /* Muted gray for body text */
+}
+
+/* Info section with consistent navy theme */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.info-box {
+  background-color: #24313D; /* Slightly darker navy for info boxes */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.info-box h3 {
+  color: #49BEB7; /* Light teal for titles */
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.info-box p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #EAEAEA; /* Light gray for text */
+}
+
+/* Styling for the main heading of licenses section */
+.license-heading {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #49BEB7; /* Light teal */
+  text-transform: uppercase; /* Professional look */
+  letter-spacing: 3px;
+}
+
+/* License cards container */
+.license-card-main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.license-card-main .license-sub {
+  height: auto;
+}
+
+.license-card-main .card-features {
+  height: auto;
+}
+
+.license-card .card-subtitle {
+  height: auto;
+}
+
+/* Styling for individual card */
+.card {
+  background-color: #24313D; /* Slightly darker navy card background */
+  border: 1px solid #49BEB7; /* Teal border */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow with depth */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Title color and font size */
+.card-title {
+  color: #49BEB7; /* Teal for titles */
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Professional feel */
+}
+
+/* Subtitle and card price with consistent styling */
+.card-subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #49BEB7; /* Teal subtitle */
+  font-weight: bold; /* Emphasize the subtitle */
+}
+
+/* Card price with teal styling */
+.card-price {
+  font-size: 36px;
+  color: #49BEB7; /* Teal price */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Features list styling */
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-features li {
+  margin-bottom: 10px;
+  color: #F5F5F5; /* Soft white for features */
+  font-size: 14px;
+}
+
+/* Button styling */
+.enquire-button {
+  background-color: #49BEB7; /* Teal button background */
+  color: #1E2A38; /* Navy text color */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  text-transform: uppercase; /* Professional look */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Hover effect for button */
+.enquire-button:hover {
+  background-color: #3CAEA3; /* Slightly darker teal for hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* More prominent shadow on hover */
+  transform: translateY(-3px); /* Button lifts up */
+}
+
+/* Button active state (when clicked) */
+.enquire-button:active {
+  transform: scale(0.95); /* Shrink the button slightly when clicked */
+  box-shadow: none; /* Remove shadow when clicked */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .license-card-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .intro-section h2 {
+    font-size: 20px;
+  }
+
+  .intro-section p {
+    font-size: 14px;
+  }
+
+  .info-box h3 {
+    font-size: 18px;
+  }
+
+  .info-box p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .license-container {
+    padding: 20px;
+  }
+
+  .intro-section h2 {
+    font-size: 18px;
+  }
+
+  .intro-section p {
+    font-size: 12px;
+  }
+
+  .info-box h3 {
+    font-size: 16px;
+  }
+
+  .info-box p {
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+  }
+
+  .card-price {
+    font-size: 28px;
+  }
+
+  .card-features li {
+    font-size: 12px;
+  }
+
+  .enquire-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

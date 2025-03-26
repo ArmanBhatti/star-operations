@@ -1,0 +1,235 @@
+/* Base Styles */
+.express-pro-container {
+  background-image: url("/src/Assets/backgroundimg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #0f172a; /* Deep navy background */
+  color: #e2e8f0; /* Light blue-grey text */
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  transform: scale(1.5);
+}
+
+.written p {
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  margin-top: -20px;
+}
+
+.promo-section {
+  flex: 1;
+  position: relative;
+  color: #cbd5e1;
+  margin-right: 0;
+  text-align: center;
+}
+
+.lowest,
+.price,
+.gurantee {
+  margin-top: 20px;
+  color: #c2d6e7;
+}
+
+.price-info {
+  background-color: rgba(15, 23, 42, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid #ffffff;
+}
+
+.price-info span {
+  font-size: 1rem;
+}
+
+.price-info h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.price-info p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #b6eff1;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.contact-info a {
+  color: #a2dada;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Form Section - Updated and Optimized */
+.form-section {
+  background-color: rgba(36, 49, 61, 0.9); /* Semi-transparent dark background */
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #38bdf8; /* Bright blue for headings */
+  text-align: center;
+}
+
+.form-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #cbd5e1; /* Light grey for text */
+  text-align: center;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Consistent spacing between form elements */
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #4a5568; /* Darker border for contrast */
+  background-color: #1a2531; /* Darker background for inputs */
+  color: #e2e8f0; /* Light text color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  border-color: #38bdf8; /* Highlight border on focus */
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3); /* Glow effect on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-section textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 120px; /* Minimum height for textarea */
+}
+
+.form-section button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); /* Gradient button */
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  margin-left: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.form-section button:hover {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8); /* Reverse gradient on hover */
+  transform: scale(1.02); /* Slight scale up on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .express-pro-container {
+    padding: 10px;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-section {
+    width: 90%;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .contact-info a {
+    font-size: 16px;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .form-section button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

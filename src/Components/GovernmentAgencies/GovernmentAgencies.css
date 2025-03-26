@@ -1,0 +1,86 @@
+.agencies-container {
+  padding: 50px;
+  background-color: #304140; /* Dark Navy Blue */
+  color: #fff;
+  text-align: center;
+}
+
+.agencies-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px; /* Space between logos */
+  margin-top: 30px;
+}
+
+.logo-item {
+  width: 200px; /* Adjust width as per the logo sizes */
+  height: 200px;
+}
+
+.logo-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: Hover effect for logos */
+.logo-item:hover img {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.highlight {
+  color: #57ad8c; /* Highlight in gold/yellow */
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .agencies-container {
+    padding: 30px;
+  }
+
+  .agencies-logos {
+    gap: 40px; /* Reduce gap between logos */
+  }
+
+  .logo-item {
+    width: 150px; /* Smaller logo size for tablets */
+    height: 150px;
+  }
+
+  .logo-item img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .highlight {
+    font-size: 22px; /* Slightly smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .agencies-container {
+    padding: 20px;
+  }
+
+  .agencies-logos {
+    gap: 20px; /* Further reduce gap between logos */
+  }
+
+  .logo-item {
+    width: 120px; /* Smaller logo size for mobile */
+    height: 120px;
+  }
+
+  .logo-item img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .highlight {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+}

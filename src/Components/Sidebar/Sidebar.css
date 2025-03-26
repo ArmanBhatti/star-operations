@@ -1,0 +1,31 @@
+/* Dots Navigation */
+.dots-container {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+  }
+  
+  .dot {
+    width: 12px; /* Smaller size for the dots */
+    height: 12px; /* Smaller size for the dots */
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark, muted color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #46adbb; /* Blue for active dot */
+    transform: scale(1.5); /* Slightly enlarged when active */
+  }
+  
+  .dot:hover {
+    background-color: #0e739b; /* Blue on hover */
+    transform: scale(1.6); /* Slightly enlarged on hover */
+  }
+  

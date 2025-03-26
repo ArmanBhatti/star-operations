@@ -1,0 +1,97 @@
+.testimonials-container {
+  padding: 50px;
+  background-color: #1c4253; /* Dark Navy Blue background */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header h2 {
+  font-size: 40px; /* Larger font size for the heading */
+  margin-bottom: 20px;
+  color: #ffffff; /* White text for the heading */
+  font-weight: 700; /* Bold for emphasis */
+}
+
+.header span {
+  color: #49BEB7; /* Lighter navy blue for accents */
+}
+
+.header p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #a8a8a8; /* Soft light grayish blue for paragraph text */
+  font-weight: 400; /* Regular weight for readability */
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.header li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #49BEB7; /* Light blue-gray color for list items */
+  font-weight: 700; /* Medium font weight for list items */
+  letter-spacing: 0.5px; /* Slightly spaced letters for readability */
+}
+
+/* Optional: Adding hover effect for list items */
+.header li:hover {
+  color: #ffffff; /* Change to white text on hover */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .header h2 {
+    font-size: 30px; /* Smaller heading size for mobile screens */
+  }
+
+  .header p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+
+  .header li {
+    font-size: 14px; /* Smaller font size for list items */
+  }
+}
+
+/* Responsive Design for Very Small Screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .testimonials-container {
+    padding: 20px; /* Further reduce padding for very small screens */
+  }
+
+  .header h2 {
+    font-size: 24px; /* Even smaller heading size for very small screens */
+  }
+
+  .header p {
+    font-size: 14px; /* Further adjust paragraph font size */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+
+  .header ul {
+    margin-top: 20px; /* Reduce margin for list */
+  }
+
+  .header li {
+    font-size: 12px; /* Smaller font size for list items */
+    margin-bottom: 8px; /* Reduce margin between list items */
+  }
+}

@@ -1,10 +1,19 @@
+/* App.css */
 .App {
   text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  color: #333; /* Dark gray text for better readability */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)); /* Add a subtle shadow */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(40, 44, 52, 0.9); /* Semi-transparent dark background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +31,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Bold text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Brighter blue on hover */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +54,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* New Styles for Responsive Layout */
+.component-container {
+  padding: 20px;
+  margin-left: 80px; /* Adjust based on sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+.fade-section {
+  margin-bottom: 40px;
+  background: white; /* White background for sections */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.fade-section:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .component-container {
+    margin-left: 0; /* Remove margin for smaller screens */
+    padding: 10px;
+  }
+
+  .fade-section {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .component-container {
+    padding: 5px;
+  }
+
+  .fade-section {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+/* Additional Attractive Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* Dark blue for headings */
+  font-weight: 700; /* Bold headings */
+  margin-bottom: 15px; /* Spacing below headings */
+}
+
+p {
+  line-height: 1.6; /* Better line spacing for readability */
+  color: #555; /* Slightly lighter text for paragraphs */
+}
+
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded button */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Social Icons (if used) */
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+  color: #61dafb; /* Blue color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
 }

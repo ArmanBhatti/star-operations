@@ -1,0 +1,78 @@
+/* Wrapper */
+.business-setup-wrapper {
+    background-color: rgb(255, 255, 255); /* Blue theme background */
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* Header */
+  .header h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .header h2 {
+    color: #0a74da; /* Blue text for "Business Setup in Dubai & UAE" */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .header p {
+    color: #fffdfd;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  /* Cards Container */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  /* Individual Card */
+  .card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    color:  #7cb1ac; /* Blue heading */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .card button {
+    background-color: #3b6375; /* Blue button */
+    color: rgb(248, 227, 227);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .card button:hover {
+    background-color: #204a66; /* Darker blue on hover */
+  }
+  

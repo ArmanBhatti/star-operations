@@ -1,0 +1,160 @@
+.consultation-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque white background */
+  animation: fadeIn 1.2s ease-in-out; /* Subtle fade-in animation */
+}
+
+.consultation-expert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expert-info {
+  text-align: center;
+  margin-top: 15px;
+  color: #1e293b; /* Dark navy blue text */
+}
+
+.expert-image {
+  width: 250px;
+  height: 250px;
+  margin-left: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 6px 12px rgba(15, 23, 42, 0.3); /* Slightly stronger navy blue shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover effect */
+}
+
+.expert-image:hover {
+  transform: scale(1.1); /* Zoom-in on hover */
+  box-shadow: 0px 8px 16px rgba(15, 23, 42, 0.4); /* Increased shadow on hover */
+}
+
+.consultation-message {
+  text-align: center;
+  max-width: 400px;
+}
+
+.consultation-message h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0f172a; /* Very dark navy blue */
+  animation: slideInFromLeft 1s ease-in-out; /* Smooth slide-in animation */
+}
+
+.consultation-message p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #1e293b; /* Standard navy blue */
+  animation: slideInFromRight 1s ease-in-out; /* Smooth slide-in animation */
+}
+
+.callback-button {
+  background-color: #1e293b; /* Bright navy blue button */
+  color: #ffffff; /* White text */
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.callback-button:hover {
+  background-color: #016381; /* Darker navy blue on hover */
+  transform: translateY(-4px); /* Slight upward lift on hover */
+  box-shadow: 0px 6px 12px rgba(37, 99, 235, 0.4); /* Enhanced shadow on hover */
+}
+
+.callback-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); /* Bright blue focus ring */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .consultation-banner {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .consultation-message {
+    order: -1; /* Move the message to the top */
+  }
+
+  .consultation-message h2 {
+    font-size: 28px;
+  }
+
+  .consultation-message p {
+    font-size: 16px;
+  }
+
+  .expert-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-banner {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .consultation-message h2 {
+    font-size: 24px;
+  }
+
+  .consultation-message p {
+    font-size: 14px;
+  }
+
+  .expert-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .callback-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

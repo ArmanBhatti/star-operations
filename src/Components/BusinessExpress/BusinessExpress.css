@@ -1,0 +1,157 @@
+/* BusinessExpress.css */
+
+.business-support-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* Text Content Animation */
+.text-content {
+  margin-left: 100px;
+  max-width: 50%;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content .highlight {
+  color: #021847;
+  font-weight: 600;
+}
+
+.text-content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Support Card Animation */
+.support-card {
+  background-color: rgb(34, 113, 119);
+  border-radius: 30px;
+  padding: 20px;
+  max-width: 400px;
+  height: 200px;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1s ease, rotate 1s ease;
+  color: rgb(188, 198, 206);
+}
+
+.card-icon {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.support-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.support-card p {
+  font-size: 14px;
+  color: #02111f;
+  font-weight: 600;
+}
+
+/* Optional Fade-in effect for initial load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .business-support-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .text-content {
+    margin-left: 0; /* Remove left margin */
+    max-width: 100%; /* Full width for text content */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add space between text and card */
+  }
+
+  .text-content h2 {
+    font-size: 24px; /* Smaller heading size */
+  }
+
+  .text-content p {
+    font-size: 14px; /* Smaller paragraph font size */
+  }
+
+  .support-card {
+    max-width: 100%; /* Full width for card */
+    height: auto; /* Auto height for card */
+    padding: 15px; /* Reduce padding */
+    text-align: center; /* Center-align card content */
+  }
+
+  .support-card h3 {
+    font-size: 18px; /* Smaller card title font size */
+  }
+
+  .support-card p {
+    font-size: 13px; /* Smaller card description font size */
+  }
+}
+
+/* Responsive Design for Very Small Screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .business-support-container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .text-content h2 {
+    font-size: 20px; /* Even smaller heading size */
+  }
+
+  .text-content p {
+    font-size: 12px; /* Even smaller paragraph font size */
+  }
+
+  .support-card {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .support-card h3 {
+    font-size: 16px; /* Even smaller card title font size */
+  }
+
+  .support-card p {
+    font-size: 12px; /* Even smaller card description font size */
+  }
+}

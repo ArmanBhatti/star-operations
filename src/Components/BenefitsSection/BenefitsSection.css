@@ -1,0 +1,124 @@
+.benefits-section {
+  padding: 50px 20px;
+  background-color: #ffffff; /* White background */
+  color: #1e2a47; /* Navy blue text color */
+  text-align: center;
+}
+
+.benefits-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.benefits-section span {
+  color: #1e2a47; /* Navy blue highlight for the span */
+  font-weight: bold;
+}
+
+.benefits-section p {
+  font-size: 18px;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1e2a47; /* Navy blue text color for the paragraph */
+  line-height: 1.6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.benefit-item {
+  background-color: #ffffff; /* White background for each item */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #1e2a47; /* Navy blue border for items */
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px); /* Hover effect */
+  background-color: #f0f4f8; /* Light grey background on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.benefit-item img {
+  width: 250px; /* Increased width */
+  height: 250px; /* Increased height */
+  object-fit: contain; /* Ensure image fits within the size */
+  margin-bottom: 15px;
+  border-radius: 8px; /* Slight rounding for images */
+  border: 1px solid #ccc; /* Optional: border for images */
+}
+
+.benefit-item p {
+  font-size: 16px;
+  color: #1e2a47; /* Navy blue text for each benefit description */
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.benefit-item:hover p {
+  color: #1e2a47; /* Navy blue text color stays on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 30px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .benefits-section h2 {
+    font-size: 28px; /* Smaller heading size for mobile screens */
+  }
+
+  .benefits-section p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    gap: 20px; /* Reduce gap between items */
+  }
+
+  .benefit-item img {
+    width: 150px; /* Slightly smaller image size for smaller screens */
+    height: 150px;
+  }
+}
+
+/* Responsive Design for Very Small Screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .benefits-section {
+    padding: 20px 10px; /* Further reduce padding for very small screens */
+  }
+
+  .benefits-section h2 {
+    font-size: 24px; /* Even smaller heading size for very small screens */
+  }
+
+  .benefits-section p {
+    font-size: 14px; /* Further adjust paragraph font size */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    gap: 15px; /* Further reduce gap between items */
+  }
+
+  .benefit-item img {
+    width: 200px; /* Smaller image size for mobile */
+    height: 200px;
+  }
+}
